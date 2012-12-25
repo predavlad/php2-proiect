@@ -49,9 +49,10 @@ final class Core {
 
         } else if(count($parts) < 3) {
 
-            if (!isset($parts[2])) { $parts[2] = 'index'; }
-            if (!isset($parts[1])) { $parts[1] = 'index'; }
-            if (!isset($parts[0])) { $parts[0] = 'index'; }
+            if (!isset($parts[2]) || $parts[0] == '' ) { $parts[2] = 'index'; }
+            if (!isset($parts[1]) || $parts[0] == '' ) { $parts[1] = 'index'; }
+            if (!isset($parts[0]) || $parts[0] == '' ) { $parts[0] = 'index'; }
+
 
         }
 
@@ -81,7 +82,7 @@ final class Core {
 
         if (Core::isRegisteredModule($parts[0])) {
             $path = 'modules/' . implode('/', $parts) . '.php';
-            echo $path;
+//            echo $path;
             include ($path);
         } else {
             throw new Exception('Trying to access an unregistered/inexistent module. STOP IT !!!');
@@ -107,6 +108,17 @@ final class Core {
     public static function getController($class) {
 
         $className = Core::getClassName($class, 'controller');
+
+        return new $className;
+
+    }
+
+    /**
+     * Block factory
+     */
+    public static function getBlock($class) {
+
+        $className = Core::getClassName($class, 'block');
 
         return new $className;
 
