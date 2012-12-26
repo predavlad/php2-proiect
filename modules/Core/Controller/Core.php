@@ -2,32 +2,45 @@
 class Core_Controller_Core {
 
     protected $template;
-    protected $updateLayout = 'core.xml';
+
+    public function __construct() {
+        $this->template = new Core_Template_Core;
+    }
 
     public function setTemplate($template) {
-        if ($this->templateExists($template)) {
-            $this->template = $template;
-        }
+        $this->template->setTemplate($template);
+    }
+
+
+    public function setAreaTemplate( $areaName, $areaFile ) {
+
+        $this->template->setAreaFile( $areaName, $areaFile );
+
     }
 
     public function getTemplate() {
+
         return $this->template;
-    }
-
-    public function templateExists($template) {
-
-        $blockName = Core::getClassName($template, 'template');
-
-        var_dump($blockName);
 
     }
 
-    public function loadLayout() {
+    public function templateExists() {
 
-        $coreXml = Config::get('CORE_XML');
-        $xml = new SimpleXMLElement(file_get_contents($coreXml));
+        return file_exists('views/' . $this->template);
 
-        print_r($xml);
+    }
+
+    public function assign($key, $value) {
+
+        $this->template->assign($key, $value);
+
+    }
+
+    /**
+     * Render the template
+     */
+    public function render($echo) {
+        $this->template->render(null, $echo);
     }
 
 }

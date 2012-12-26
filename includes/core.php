@@ -7,12 +7,24 @@ final class Core {
      */
     public static function run() {
 
+        /**
+         * Get the route
+         * The URL will have the following structure:
+         * module_name/controller_name/action_name/param1/1/param2/5
+         */
         $route = Core::getRoute();
 
-        // get the controller object
+        /*
+         * Instantiate the controller object
+         */
         $controller = Core::getController($route['module'] . '/' . $route['controller']);
 
         $action = $route['action'] . 'Action';
+
+        /*
+         * Set the content file for the current template
+         */
+        $controller->setAreaTemplate('content', Core::getViewFile($route));
 
         /**
          * call the action of that controller
@@ -82,7 +94,6 @@ final class Core {
 
         if (Core::isRegisteredModule($parts[0])) {
             $path = 'modules/' . implode('/', $parts) . '.php';
-//            echo $path;
             include ($path);
         } else {
             throw new Exception('Trying to access an unregistered/inexistent module. STOP IT !!!');
@@ -113,17 +124,9 @@ final class Core {
 
     }
 
-    /**
-     * Block factory
-     */
-    public static function getBlock($class) {
-
-        $className = Core::getClassName($class, 'block');
-
-        return new $className;
-
+    public static function getViewFile($route) {
+        return "{$route['module']}/{$route['controller']}/{$route['action']}.php";
     }
-
 
     public static function getClassName($class, $type) {
 
@@ -144,4 +147,3 @@ final class Core {
 
 
 }
-?>

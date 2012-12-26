@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1acbfeb-ec0b-4adc-9b69-d402e92f7ad7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/core.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/modules/core.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/layout/modules/product.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Controller/Core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Core/Template/Core.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col-main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col/content.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col/head.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/2col/left.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/product/index/index.php" />
+      <change type="DELETED" beforePath="E:\wamp\www\php2\php2-proiect\layout\core.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\php2\php2-proiect\layout\modules\core.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\wamp\www\php2\php2-proiect\modules\Core\Block\Core.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/constants.php" afterPath="$PROJECT_DIR$/includes/constants.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/core.php" afterPath="$PROJECT_DIR$/includes/core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Core/Controller/Core.php" afterPath="$PROJECT_DIR$/modules/Core/Controller/Core.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Product/Controller/Index.php" afterPath="$PROJECT_DIR$/modules/Product/Controller/Index.php" />
+      <change type="MOVED" beforePath="E:\wamp\www\php2\php2-proiect\layout\modules\product.xml" afterPath="$PROJECT_DIR$/views/1col-main.php" />
     </list>
     <ignored path="php2-proiect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,57 +40,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
+          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Downloads/Designa/Designa 2.01/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="-1.3076923">
-                  <folding>
-                    <marker date="1356387421904" expanded="true" signature="330:348" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="28" selection-start="180" selection-end="180" vertical-scroll-proportion="-5.230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/database.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="20" selection-start="117" selection-end="117" vertical-scroll-proportion="-3.9230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="constants.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/includes/constants.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="40" selection-start="355" selection-end="355" vertical-scroll-proportion="0.33530572">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="core.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/core.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="25" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-12.423077">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.htaccess">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+                <state line="21" column="75" selection-start="837" selection-end="837" vertical-scroll-proportion="0.4239905">
                   <folding />
                 </state>
               </provider>
@@ -91,57 +53,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.php">
+          <file leaf-file-name="services.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Downloads/Designa/Designa 2.01/services.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <marker date="1356387421904" expanded="true" signature="330:348" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Index.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/modules/Product/Controller/Index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="28" selection-start="135" selection-end="135" vertical-scroll-proportion="-3.9230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Core.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/modules/Core/Controller/Core.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="22" selection-start="651" selection-end="651" vertical-scroll-proportion="-18.961538">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="core.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/layout/modules/core.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="core.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/layout/core.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="12" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="product.xml" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/layout/modules/product.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="73" column="14" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.39583334">
                   <folding />
                 </state>
               </provider>
@@ -162,21 +77,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/includes/autoload.php" />
-        <option value="$PROJECT_DIR$/modules/layout.xml.xhtml" />
-        <option value="$PROJECT_DIR$/modules/core/Block/Core.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/modules/core.php" />
-        <option value="$PROJECT_DIR$/includes/database.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/config.php" />
         <option value="$PROJECT_DIR$/some_file.php" />
-        <option value="$PROJECT_DIR$/includes/core.php" />
+        <option value="$PROJECT_DIR$/layout/core.xml" />
+        <option value="$PROJECT_DIR$/layout/modules/core.xml" />
+        <option value="$PROJECT_DIR$/modules/Core/Template/2col-main.php" />
         <option value="$PROJECT_DIR$/includes/constants.php" />
         <option value="$PROJECT_DIR$/modules/Core/Controller/Core.php" />
         <option value="$PROJECT_DIR$/modules/Product/Controller/Index.php" />
-        <option value="$PROJECT_DIR$/layout/core.xml" />
-        <option value="$PROJECT_DIR$/layout/modules/core.xml" />
+        <option value="$PROJECT_DIR$/modules/Core/Template/Core.php" />
+        <option value="$PROJECT_DIR$/views/2col/head.php" />
+        <option value="$PROJECT_DIR$/views/2col-main.php" />
+        <option value="$PROJECT_DIR$/views/2col/left.php" />
+        <option value="$PROJECT_DIR$/views/2col/header.php" />
+        <option value="$PROJECT_DIR$/views/2col/content.php" />
+        <option value="$PROJECT_DIR$/views/2col/footer.php" />
+        <option value="$PROJECT_DIR$/includes/core.php" />
+        <option value="$PROJECT_DIR$/views/product/index/index.php" />
       </list>
     </option>
   </component>
@@ -241,6 +157,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2col" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php2-proiect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -262,6 +232,10 @@
               <option name="myItemId" value="Core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -278,24 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Block" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php2-proiect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php2-proiect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\wamp\www\php2\php2-proiect\views" />
       <recent name="E:\wamp\www\php2\php2-proiect\includes" />
     </key>
   </component>
@@ -376,19 +333,24 @@
       <created>1356390968569</created>
       <updated>1356390968569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Version 0.1.0">
+      <created>1356422559669</created>
+      <updated>1356422559669</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="48" width="1296" height="1040" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284091" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32254463" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22042139" sideWeight="0.6715909" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22042139" sideWeight="0.6707589" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -396,7 +358,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33522728" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -457,9 +418,44 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/views/2col/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/2col/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/2col/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/2col/left.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/2col/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/2col-main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="16" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
@@ -471,25 +467,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/includes/constants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1356387421904" expanded="true" signature="330:348" placeholder="..." />
-          </folding>
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/some_file.php">
+    <entry file="file://$PROJECT_DIR$/modules/Core/Template/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="14" selection-start="20" selection-end="20" vertical-scroll-proportion="0.020118343">
+        <state line="70" column="27" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-24.653847">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="25" selection-start="2100" selection-end="2100" vertical-scroll-proportion="-12.423077">
+        <state line="127" column="16" selection-start="3018" selection-end="3018" vertical-scroll-proportion="-14.846154">
           <folding />
         </state>
       </provider>
@@ -501,44 +495,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/constants.php">
+    <entry file="file://$PROJECT_DIR$/views/product/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="355" selection-end="355" vertical-scroll-proportion="0.33530572">
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Designa/Designa 2.01/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="75" selection-start="837" selection-end="837" vertical-scroll-proportion="0.4239905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Designa/Designa 2.01/services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="14" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.39583334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Core/Controller/Core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="651" selection-end="651" vertical-scroll-proportion="-18.961538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Product/Controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="135" selection-end="135" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/modules/core.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/core.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layout/modules/product.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="42" column="43" selection-start="792" selection-end="792" vertical-scroll-proportion="-27.461538">
           <folding />
         </state>
       </provider>
