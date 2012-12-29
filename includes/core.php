@@ -9,8 +9,6 @@ final class Core {
 
         /**
          * Get the route
-         * The URL will have the following structure:
-         * module_name/controller_name/action_name/param1/1/param2/5
          */
         $route = Core::getRoute();
 
@@ -22,7 +20,7 @@ final class Core {
         $action = $route['action'] . 'Action';
 
         /*
-         * Set the content file for the current template
+         * Set the content file for the current route
          */
         $controller->setAreaTemplate('content', Core::getViewFile($route));
 
@@ -66,6 +64,13 @@ final class Core {
             if (!isset($parts[0]) || $parts[0] == '' ) { $parts[0] = 'index'; }
 
 
+        }
+
+        /**
+         * This is to prevent errors from using the very strict registry singleton
+         */
+        if (!Config::exists('get')) {
+            Config::set('get', array());
         }
 
         // get the module / controller / action that need to be called
@@ -119,15 +124,27 @@ final class Core {
     public static function getController($class) {
 
         $className = Core::getClassName($class, 'controller');
+        $templateName = Core::getClassName($class, 'template');
 
-        return new $className;
+        return new $className($templateName);
 
     }
 
+
+    /**
+     * @Get the content file for current route
+     */
     public static function getViewFile($route) {
+
         return "{$route['module']}/{$route['controller']}/{$route['action']}.php";
+
     }
 
+    /**
+     * Form the class name from the given class short name
+     * for example, if $class = "product/view", and $type = "model", the result will be
+     * Product_Model_View
+     */
     public static function getClassName($class, $type) {
 
         $parts = explode('/', $class);

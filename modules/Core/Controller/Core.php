@@ -2,9 +2,10 @@
 class Core_Controller_Core {
 
     protected $template;
+    protected $templateType;
 
-    public function __construct() {
-        $this->template = new Core_Template_Core;
+    public function __construct($templateName) {
+        $this->template = new $templateName;
     }
 
     public function setTemplate($template) {

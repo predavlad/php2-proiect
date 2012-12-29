@@ -5,7 +5,7 @@
 Config::set('BASE', 'http://localhost/');
 Config::set('FOLDER', 'php2/php2-proiect');
 Config::set('SITE_URL', Config::get('BASE') . Config::get('FOLDER') );
-Config::set('IMAGE_PATH', 'static/images/');
+Config::set('IMG_PATH', 'static/img/');
 Config::set('JS_PATH', 'static/js/');
 Config::set('CSS_PATH', 'static/css/');
 

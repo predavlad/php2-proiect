@@ -54,7 +54,8 @@ class Config {
         $config = Config::getInstance();
 
         if (!array_key_exists($key, $config->data)) {
-            throw new Exception("Config class. Key `{$key}` is not set.");
+//            throw new Exception("Config class. Key `{$key}` is not set.");
+            return null;
         }
 
         return $config->data[$key];
