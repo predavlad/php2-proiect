@@ -1,5 +1,4 @@
 RewriteEngine On
-
 RewriteBase /php2/php2-proiect/
 RewriteCond %{REQUEST_FILENAME} !\.(jpg|jpeg|gif|png|css|js|pl|txt)$
 RewriteCond %{REQUEST_FILENAME} !-f
