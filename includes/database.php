@@ -31,7 +31,7 @@ class DB
      * Function to get started with the ORM
      */
     public static function table($tableName) {
-        $db = DB::getFactory()->getConnection();
+        $db = DB::getFactory();
         $db->reset();
         $db->table = $tableName;
         return $db;
@@ -84,7 +84,7 @@ class DB
     /**
      * Function that combine the query
      */
-    public function getQuery() {
+    protected function getQuery() {
 
         $query = 'SELECT ';
 
@@ -120,6 +120,19 @@ class DB
             return $a;
         }
     }
+
+    public function fetchAll() {
+        $db = DB::getFactory()->getConnection();
+        $query = $this->getQuery();
+        $return = array();
+
+        foreach ($db->query($query) as $row) {
+            $return[] = $row;
+        }
+
+        return $return;
+    }
+
 
 }
 

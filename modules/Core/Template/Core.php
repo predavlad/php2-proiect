@@ -75,5 +75,23 @@ class Core_Template_Core {
 
     }
 
+    /**
+     * And in here we will have the methods that will be used in all views. Or most views
+     */
+    public function getProducts($filter = array()) {
+        $select = DB::table('produse');
+        $products = $select->fetchAll();
+
+//        var_dump($products);
+
+        if (!empty($filter)) {
+            /**
+             * stuff to do when we filter the products
+             */
+        }
+
+
+
+    }
 
 }
