@@ -11,7 +11,8 @@ class DB
     private static $factory;
     private $db;
 
-    private function __construct(){}
+    protected function __construct(){}
+    protected function __clone(){}
 
     public static function getFactory()
     {
@@ -23,7 +24,7 @@ class DB
 
     public function getConnection() {
         if (!$this->db)
-            $this->db = new PDO('mysql:dbname=proiect;host=localhost', 'root', '');
+            $this->db = new PDO('mysql:dbname=proiect;host=localhost', 'root', 'parola1!');
         return $this->db;
     }
 

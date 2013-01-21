@@ -61,7 +61,7 @@ final class Core {
 
             if (!isset($parts[2]) || $parts[0] == '' ) { $parts[2] = 'index'; }
             if (!isset($parts[1]) || $parts[0] == '' ) { $parts[1] = 'index'; }
-            if (!isset($parts[0]) || $parts[0] == '' ) { $parts[0] = 'index'; }
+            if (!isset($parts[0]) || $parts[0] == '' ) { $parts[0] = 'product'; }
 
 
         }

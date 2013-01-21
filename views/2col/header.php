@@ -1,5 +1,5 @@
 <a href="index.html" class="logo fleft">
-    <img src="<?php echo Config::get('IMG_PATH'); ?>/logo.png" alt="Designa Studio">
+    <img src="<?php echo Config::get('IMG_PATH'); ?>/logo.jpg" style="width: 100px;" alt="Designa Studio">
 </a>
 
 <nav class="fright">
