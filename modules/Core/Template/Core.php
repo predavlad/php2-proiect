@@ -49,7 +49,12 @@ class Core_Template_Core {
     protected function getTemplateFile($area = null) {
 
         if (!is_null($area)) {
-            return "views/{$this->getAreaFile($area)}";
+            $file = "views/{$this->getAreaFile($area)}";
+            if (file_exists($file)) {
+                return $file;
+            } else {
+                return null;
+            }
         } else {
             return "views/{$this->template}.php";
         }
@@ -60,7 +65,13 @@ class Core_Template_Core {
     public function render($template = null, $echo = false) {
 
         ob_start();
-        include $this->getTemplateFile($template);
+        $file = $this->getTemplateFile($template);
+        if (file_exists($file)) {
+            include $file;
+        } else {
+            echo 'Missing file!!!';
+        }
+
         $return = ob_get_clean();
 
 

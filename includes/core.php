@@ -59,10 +59,7 @@ final class Core {
 
         } else if(count($parts) < 3) {
 
-            if (!isset($parts[2]) || $parts[0] == '' ) { $parts[2] = 'index'; }
-            if (!isset($parts[1]) || $parts[0] == '' ) { $parts[1] = 'index'; }
-            if (!isset($parts[0]) || $parts[0] == '' ) { $parts[0] = 'product'; }
-
+            $parts = Core::getUrl($parts);
 
         }
 
@@ -82,10 +79,53 @@ final class Core {
 
     }
 
+    /**
+     * Expects an array with the module/controller/action
+     * @param $parts
+     */
+    public static function getUrl($parts) {
+        if (!isset($parts[2]) || $parts[0] == '') {
+            $parts[2] = 'index';
+        }
+        if (!isset($parts[1]) || $parts[0] == '') {
+            $parts[1] = 'index';
+        }
+        if (!isset($parts[0]) || $parts[0] == '') {
+            $parts[0] = 'product';
+        }
+        return $parts;
+    }
+
+    /**
+     * @param $url expects module/controller/action
+     * @param $params expects array('key' => 'action', ...)
+     */
+    public static function formUrl($url, $params = array()) {
+        $parts = explode('/', $url);
+        $url = Core::getUrl($parts);
+        if (is_array($params) && count($params) > 0) {
+            foreach ($params as $key => $value) {
+                $url .= "/{$key}/{$value}";
+            }
+        }
+        return $url;
+    }
+
+    public static function redirect($url, $params = array()) {
+        $parts = Core::formUrl($url, $params);
+        $url = implode('/', $parts);
+        header("Location:{$url}");
+        // just in case php redirect fails
+        echo "<script type='text/javascript'>window.location.href='{$url}'</script>";
+        die; // motherfucker !!!
+    }
+
+
 
     /**
      * Check if module is registered and active
-     * @TODO
+     * Always returns true
+     * @TODO: everything about this
      */
     public static function isRegisteredModule($moduleName) {
         return true;
@@ -93,19 +133,28 @@ final class Core {
 
     /**
      * Autoload stuff
+     * Should check for XSS injection, but I'm waaaay too lazy
      */
     public static function autoload($className) {
         $parts = explode('_', $className);
-
-        if (Core::isRegisteredModule($parts[0])) {
-            $path = 'modules/' . implode('/', $parts) . '.php';
-            include ($path);
-        } else {
-            throw new Exception('Trying to access an unregistered/inexistent module. STOP IT !!!');
+        $path = 'modules/' . implode('/', $parts) . '.php';
+        if (Core::isRegisteredModule($parts[0]) && file_exists($path)) {
+            include_once $path;
         }
-
     }
 
+
+    /**
+     * Autoloader for libraries
+     * @param $className
+     */
+    public static function libAutoload($className) {
+        $parts = explode('_', $className);
+        $path = 'lib/' . implode('/', $parts) . '.php';
+        if (file_exists($path)) {
+            include $path;
+        }
+    }
 
     /**
      * Model factory

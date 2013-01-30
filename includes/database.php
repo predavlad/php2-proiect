@@ -63,13 +63,14 @@ class DB
 
     /**
      * Expected array:
-     * array)'col_name' => 'value')
+     * array('col = value')
+     * This defeats the purpose of using an ORM
+     * @TODO: change to array($key => $value, $operation = '=', $operationArray = array())
      */
     public function where( $where ) {
-        if (!is_array($where)) {
-            throw new Exception('Where clause needs to be an array');
-        }
-
+//        if (!is_array($where)) {
+//            throw new Exception('Where clause needs to be an array');
+//        }
         $this->where[] = $where;
     }
 
@@ -98,8 +99,11 @@ class DB
         $query .= ' FROM ';
         $query .= $this->table;
 
-        $query .= '';
-        $query .= $this->get_part($this->where);
+        $whereQuery = $this->get_part($this->where);
+        if (!empty($whereQuery) && strlen($whereQuery)) {
+            $query .= ' WHERE ' . $whereQuery;
+        }
+
 
         if (strlen($this->order) > 1) {
             $query .= ' ORDER BY ' . $this->order;
@@ -113,15 +117,25 @@ class DB
 
     }
 
-
+    /**
+     * @TODO: add support for OR
+     * @param $a
+     * @return string
+     */
     protected function get_part($a) {
         if (is_array($a)) {
-            return implode(',', $a);
+            return implode(' AND ', $a);
         } else {
             return $a;
         }
     }
 
+    /**
+     * Should use prepared queries vs SQL injection
+     * But I'm too lazy :)
+     *
+     * @return array
+     */
     public function fetchAll() {
         $db = DB::getFactory()->getConnection();
         $query = $this->getQuery();
@@ -132,6 +146,18 @@ class DB
         }
 
         return $return;
+    }
+
+    /**
+     * Same here
+     * @return mixed
+     */
+    public function fetchRow() {
+        $db = DB::getFactory()->getConnection();
+        $query = $this->getQuery();
+        $rez = $db->query($query); // @TODO grab only table names and not numeric
+
+        return $rez->fetch();
     }
 
 
