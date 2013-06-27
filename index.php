@@ -1,6 +1,7 @@
 <?php
 /**
- * This was made as a starting point for a project I did for the Php2 course at InfoAcademy. Not quite functional.
+ * This was made as a starting point for a project I did for the Php2 course at InfoAcademy.
+ * Not quite functional.
  * 
  * Just a bit of info on how the "framework" works:
  * 1. Get the route and params from the URL ( module_name/controller_name/action_name/param1/1/param2/5 )
@@ -14,7 +15,6 @@
  *
  * @author: Vlad Preda
  * @website: predavlad.com
- * 
  */
 error_reporting(E_ALL ^ E_NOTICE);
 
