@@ -1,5 +1,7 @@
 <?php
 /**
+ * This was made as a starting point for a project I did for the Php2 course at InfoAcademy. Not quite functional.
+ * 
  * Just a bit of info on how the "framework" works:
  * 1. Get the route and params from the URL ( module_name/controller_name/action_name/param1/1/param2/5 )
  * $_GET isn't used, but these params are stored in Config::get('get')
@@ -10,9 +12,9 @@
  * for interacting with the models
  * 4. The render function for templates can be called recursively. A limit should be added though.
  *
- * Made by Preda Vlad
- * Copyright @PredaVlad
- * One of those licences where you can use whatever you want and have no legal repercussions
+ * @author: Vlad Preda
+ * @website: predavlad.com
+ * 
  */
 error_reporting(E_ALL ^ E_NOTICE);
 
